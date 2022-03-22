@@ -2,6 +2,7 @@
 import { Link } from 'react-router-dom';
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
+import { Nav } from "../../components/Nav/Nav";
 import Foto from "../../img/foto-bg-mulher.png";
 import './Home.css'
 
@@ -9,8 +10,9 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className="divdomeio">
-        <img src={Foto} className='banner' />
+
+      <main className="divdomeio">
+        {/*    <img src={Foto} className='banner' /> */}
         <div className="texto">
           <div className="textoH1">
             <h1 className="titulo-banner">
@@ -28,12 +30,12 @@ export default function Home() {
 
             <div>
               <Link to="/facebookfavela">
-                <button className="btn">Saiba mais</button>
+                <button className="btnH">Saiba mais</button>
               </Link>
             </div>
           </div>
         </div>
-      </div>
+      </main>
       <Footer />
     </>
   );

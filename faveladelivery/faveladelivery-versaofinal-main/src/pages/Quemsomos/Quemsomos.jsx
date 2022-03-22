@@ -3,17 +3,19 @@ import React from 'react';
 import { Player } from 'video-react';
 import Footer from '../../components/Footer/Footer';
 import { Nav } from '../../components/Nav/Nav';
+import Header from '../../components/Header/Header';
 import './Quemsomos.css'
 
 
 export default () => {
   return (
     <>
-      <Nav />
-      <main className='quemsomosprincipal'>
-        <div className='titulos'>
+      {/*   <Nav /> */}
+      <Header />
+      <main className="quemsomosprincipal">
+        <div className="titulos">
           <h1>Quem somos</h1>
-          <p className='textoquemsomos'>
+          <p className="textoquemsomos">
             Somos um grupo de alunos da ONG Recode Pro empenhados e em
             desenvolvimento, buscando evolução constante e a primeira oportunidade
             no mercado de trabalho na área de tecnologia, especificamente
@@ -26,13 +28,9 @@ export default () => {
             focando especificamente mulheres que residem dentro destas
             comunidades.
           </p>
-          <div className='videoquemsomos'>
-            {/*    <Player
-            playsInLine
-            poster="/img/ft favela.jpg"
-            src="https://youtu.be/KsF-X2kKFCU"
-          /> */}
-          </div>
+          {/*   <div>
+            <Player className="videoquemsomos" playsInLine poster="/img/ft favela.jpg" src="https://youtu.be/KsF-X2kKFCU" />
+          </div> */}
           <a href="../../Contato.jsx">
             <button className='btn-quemsomos' type="submit">Saiba Mais</button>
           </a>

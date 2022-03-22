@@ -5,11 +5,13 @@ import { Nav } from "../../components/Nav/Nav";
 import Alimentos from "../../img/ft-alimentos.png";
 import Artesanatos from "../../img/ft-artesanatos.png";
 import Eletronicos from "../../img/ft-eletronicos.png";
+import Header from '../../components/Header/Header';
 
 function Pedidos() {
   return (
     <>
-      <Nav />
+      {/*      <Nav /> */}
+      <Header />
       <main className="pedidos">
         <div>
           <h2 className="pedidosTitulo">Pedidos</h2>
@@ -33,7 +35,6 @@ function Pedidos() {
           </div>
         </div>
       </main>
-
       <Footer />
     </>
   );

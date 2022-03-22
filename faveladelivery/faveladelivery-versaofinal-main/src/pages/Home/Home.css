@@ -4,12 +4,15 @@
 
 .divdomeio {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .texto {
   display: flex;
- 
 }
 
 .titulo-banner {
@@ -17,6 +20,7 @@
 }
 
 .banner {
+  position: absolute;
   padding-left: 1567px;
   background-image: linear-gradient(to right, #ffae00, #ffba26);
   background-repeat: no-repeat;
@@ -27,6 +31,7 @@
 
 .textoH1 {
   display: flex;
+  /*  position: absolute; */
   font-size: 28px;
   font-weight: bold;
   margin: 10%;
@@ -37,7 +42,7 @@
 }
 
 .textoP {
-  color: #fff;
+  color: rgb(0, 0, 0);
   align-items: center;
   flex-direction: column;
 }
@@ -46,7 +51,9 @@
   text-shadow: 1px 1px 1px;
   color: #005fb2;
 }
-.btn {
+.btnH {
+  position: relative;
+  width: 200px;
   margin: auto;
   padding: auto;
   border: 0;
@@ -56,7 +63,7 @@
   color: white;
 }
 
-.btn:hover {
+.btnH:hover {
   transition: 0.3s;
   background-color: #21429c;
   color: #fff;

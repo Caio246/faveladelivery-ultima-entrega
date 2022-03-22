@@ -6,11 +6,14 @@ import Entregador from "../../img/ft-entregador.png";
 import Cliente from "../../img/ft-cliente.png";
 import Footer from "../../components/Footer/Footer";
 import { Link } from "react-router-dom";
+import Header from '../../components/Header/Header';
+
 
 function Cadastro() {
   return (
     <>
-      <Nav />
+      {/*   <Nav /> */}
+      <Header />
       <main className="escolherPerfil" >
         <div >
           <h2 className="escolherPerfilTitulo">Cadastro</h2>

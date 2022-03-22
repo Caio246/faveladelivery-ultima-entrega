@@ -5,7 +5,7 @@ import Logo from '../../img/logo.png';
 
 export function Nav() {
   return (
-    <nav class="navbar navbar-expand-lg  menu">
+    <nav class=" menu navbar navbar-expand-lg">
       <div class="container-fluid menu">
         <Link to="/">
           <img src={Logo} alt="Logo" className="logo" />
